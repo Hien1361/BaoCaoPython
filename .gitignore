@@ -1,0 +1,14 @@
+# Bỏ qua thư mục ảo và cấu hình
+.idea/
+__pycache__/
+
+# Bỏ qua dữ liệu nặng (QUAN TRỌNG)
+My_Custom_Dataset/
+runs/
+anh11/
+
+# Bỏ qua file model và zip
+*.pt
+*.zip
+*.png
+*.jpg

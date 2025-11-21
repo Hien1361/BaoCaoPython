@@ -1,0 +1,110 @@
+/* * File: style.qss
+ * Chủ đề: Dark Mode (Tối) chuyên nghiệp
+ */
+
+/* === CỬA SỔ CHÍNH === */
+QMainWindow {
+    background-color: #2B2B2B; /* Nền xám đen chính */
+    color: #F0F0F0;
+}
+
+/* === THANH CÔNG CỤ (Toolbar) === */
+QToolBar {
+    background-color: #3C3C3C; /* Nền xám tối cho toolbar */
+    border: none;
+    padding: 6px;
+    spacing: 10px; /* Khoảng cách giữa các nút */
+}
+
+/* === NÚT TRÊN THANH CÔNG CỤ (ToolButton) === */
+QToolButton {
+    background-color: #4A4A4A;
+    color: #F0F0F0;
+    padding: 8px 12px;
+    border: 1px solid #5A5A5A;
+    border-radius: 4px; /* Bo góc */
+    font-weight: bold;
+}
+QToolButton:hover {
+    background-color: #5A5A5A; /* Sáng lên khi di chuột */
+}
+QToolButton:pressed {
+    background-color: #6A6A6A; /* Tối đi khi nhấn */
+}
+
+/* === CÁC NÚT ĐẶC BIỆT === */
+#BtnStart {
+    background-color: #2A824A; /* Xanh lá cho Start */
+    border-color: #277242;
+}
+#BtnStart:hover { background-color: #3A925A; }
+#BtnStart:pressed { background-color: #256E3F; }
+
+#BtnStop {
+    background-color: #B22222; /* Đỏ cho Stop */
+    border-color: #A21F1F;
+}
+#BtnStop:hover { background-color: #C23232; }
+#BtnStop:pressed { background-color: #A21F1F; }
+
+/* === KHUNG HIỂN THỊ VIDEO === */
+#PreviewCard {
+    background-color: #000000; /* Nền đen tuyệt đối cho video */
+    color: #777777; /* Màu chữ "Chưa có gì" */
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Segoe UI", Arial;
+}
+
+/* === KHUNG GROUP BOX (Bao quanh slider, thông tin) === */
+QGroupBox {
+    background-color: #333333;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-top: 10px; /* Đẩy khung xuống để tiêu đề có chỗ */
+    padding: 10px;
+    color: #F0F0F0;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+    color: #0099FF; /* Màu xanh accent cho tiêu đề */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* === CÁC NHÃN (Label) === */
+QLabel {
+    color: #E0E0E0;
+    font-family: "Segoe UI", Arial;
+}
+
+/* === THANH TRƯỢT (Slider) === */
+QSlider::groove:horizontal {
+    border: 1px solid #4A4A4A;
+    height: 8px; /* Chiều cao rãnh */
+    background: #404040;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+QSlider::handle:horizontal {
+    background: #0099FF; /* Màu xanh accent cho núm trượt */
+    border: 1px solid #0088EE;
+    width: 18px; /* Chiều rộng núm trượt */
+    margin: -5px 0; /* Căn giữa núm trượt */
+    border-radius: 9px; /* Bo tròn núm trượt */
+}
+
+/* === THANH TRẠNG THÁI (Status Bar) === */
+QStatusBar {
+    background-color: #3C3C3C;
+    color: #CCCCCC;
+}
+QStatusBar::item {
+    border: none;
+    border-right: 1px solid #5A5A5A; /* Đường kẻ ngăn cách */
+    padding: 0 8px;
+}
